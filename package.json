@@ -1,0 +1,14 @@
+{
+  "name": "basicopractico-javascript",
+  "version": "1.0.0",
+  "description": "Un repositorio donde aplicaré lo aprendido del Curso Práctico de Javascript de Platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javacript"
+  ],
+  "author": "Luis Rodriguez - DarkusPhantom - darkusphantom13@gmail.com",
+  "license": "MIT"
+}
