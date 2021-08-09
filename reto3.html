@@ -7,17 +7,33 @@
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
-	<h1>Tipos de promedio aqui</h1>
-	<form action="" class="form">
-		<label for="mediaGeometrica">Media Geometrica</label>
-		<input type="text" id="inputMediaGeometrica" name="mediaGeometrica">
-		<button type="button" id="btnMediaGeometrica" onclick="calcularMediaGeometrica()">Calcular la media geometrica</button>
-		<p id="resultadoMediaGeometrica"></p>
-		<label for="mediaArmonica">Media Armonica</label>
-		<input type="text" id="inputMediaArmonica" name="mediaArmonica">
-		<button type="button" id="btnMediaArmonica" onclick="calcularMediaArmonica()">Calcular la media armonica</button>
-		<p id="resultadoMediaArmonica"></p>
-	</form>
+	<header class="header">
+		<h1 class="title">Tipos de Promedio</h1>
+	</header>
+	<div class="main">
+		<section class="media mediaGeometrica">
+			<div class="container__mediaGeometrica">
+				<form action="" class="form">
+					<label for="mediaGeometrica" class="label">Media Geometrica</label>
+					<input type="number" id="inputMediaGeometrica" class="input" name="mediaGeometrica">
+					<button type="button" id="btnMediaGeometrica" class="btn" onclick="calcularMediaGeometrica()">Calcular la media geometrica</button>
+					<p id="resultadoMediaGeometrica" class="resultado"></p>
+				</form>
+			</div>
+		</section>
+
+		<section class="media mediaArmonica">
+			<div class="container__mediaArmonica">
+				<form action="" class="form">
+					<label for="mediaArmonica" class="label">Media Armonica</label>
+					<input type="number" id="inputMediaArmonica" class="input" name="mediaArmonica">
+					<button type="button" id="btnMediaArmonica" class="btn" onclick="calcularMediaArmonica()">Calcular la media armonica</button>
+					<p id="resultadoMediaArmonica" class="resultado"></p>
+				</form>
+			</div>
+		</section>
+	</div>
+
 	<script src="./js/reto3.js"></script>
 </body>
 </html>

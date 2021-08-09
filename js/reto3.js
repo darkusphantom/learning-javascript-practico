@@ -1,5 +1,5 @@
 function calcularMediaGeometrica() {
-	const lista = [1,2,43,754,12] ;
+	const lista = [1,2,43,754,12];
 
 }
 
