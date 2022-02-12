@@ -2,13 +2,17 @@
 	--blue: royalblue;
 	--blueClear: cornflowerblue;
 	--white: white;
+	--red: red;
 	--backgroundBody: var(--blueClear) no-repeat;
 	--backgroundContainer: var(--blue) no-repeat;
 	--fontFamilyBody: sans-serif;
 	--fontBody: 14px var(--fontFamilyBody);
 	--fontLabel: 1.3rem;
-	--fontInput: 16px;
+	--fontInput: 14px;
 	--fontResultado: 16px;
+	--fontBtn: 14px;
+	--fontBtnAdd: 12px;
+	--fontBtnReset: 12px;
 }
 
 body {
@@ -77,18 +81,19 @@ input[type=number] {
 	border-right: 0;
 	border-bottom: 2px solid white;
 	font-size: var(--fontInput);
-	padding: 0 20px;
+	padding: 0 25px 0 15px;
 	width: 170px;
 	height: 50px;
 	color: var(--white);
 	transition: width .25s;
 }
 
-.input--text--warning {
-	margin: -5px 0 15px 25px;
-	font-size: 14px;
-	align-self: flex-start;
-	color: var(--red);
+.input__container {
+	position: relative;
+}
+
+.input--error {
+	border-bottom: 2px solid var(--red);
 }
 
 ::placeholder {
@@ -101,12 +106,25 @@ input[type=number] {
 	border-radius: 25px;
 	color: white;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: var(--fontBtn);
 	font-weight: bold;
 	font-family: 'Muli', sans-serif;
 	height: 50px;
 	letter-spacing: 1px;
 	width: 200px;
+}
+
+.btn--add {
+	width: 50px;
+	font-size: var(--fontBtnAdd);
+	position: absolute;
+	right: -5px;
+	border-radius: 0 10px 10px 0;
+}
+
+.btn--reset {
+	width: 170px;
+	font-size: var(--fontBtnReset);
 }
 
 .btn:hover {

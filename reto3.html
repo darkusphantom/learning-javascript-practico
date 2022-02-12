@@ -13,10 +13,13 @@
 	<div class="main">
 		<section class="media mediaGeometrica">
 			<div class="container__mediaGeometrica">
-				<form action="" class="form">
+				<form action="" class="form" id="mediaGeometrica--form">
 					<label for="mediaGeometrica" class="label">Media Geometrica</label>
-					<input type="number" id="inputMediaGeometrica" class="input" name="mediaGeometrica">
-					<button type="button" id="btnMediaGeometrica" class="btn" onclick="calcularMediaGeometrica()">Calcular la media geometrica</button>
+					<div class="input__container">
+						<input type="number" id="inputMediaGeometrica" class="input" name="mediaGeometrica" placeholder="Ingrese un valor">
+						<button type="button" class="btn btn--add">Reset</button>
+					</div>
+					<button type="button" id="btnMediaGeometrica" class="btn">Calcular la media geometrica</button>
 					<p id="resultadoMediaGeometrica" class="resultado"></p>
 				</form>
 			</div>
@@ -24,10 +27,13 @@
 
 		<section class="media mediaArmonica">
 			<div class="container__mediaArmonica">
-				<form action="" class="form">
+				<form action="" class="form" id="mediaArmonica--form">
 					<label for="mediaArmonica" class="label">Media Armonica</label>
-					<input type="number" id="inputMediaArmonica" class="input" name="mediaArmonica">
-					<button type="button" id="btnMediaArmonica" class="btn" onclick="calcularMediaArmonica()">Calcular la media armonica</button>
+					<div class="input__container">
+						<input type="number" id="inputMediaArmonica" class="input" name="mediaArmonica" placeholder="Ingrese un valor">
+						<button type="button" class="btn btn--add">Add</button>
+					</div>
+					<button type="button" id="btnMediaArmonica" class="btn">Calcular la media armonica</button>
 					<p id="resultadoMediaArmonica" class="resultado"></p>
 				</form>
 			</div>
@@ -49,3 +55,11 @@ Responde las siguientes preguntas en los comentarios:
 
 Espero tu solución en la sección de aportes.
 -->
+
+<!-- ¿Cómo lo voy a calcular?
+1. Inicializar el listado
+2. Ingresar los datos
+3. Verificar si ya esta en pantalla el primer elemento del listado.
+	3.1 En caso de que no este, insertar la etiqueta y coloca el valor
+	3.2 En caso de que este, coloca los valores nuevos
+4. Calcular el total de datos
